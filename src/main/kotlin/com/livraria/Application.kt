@@ -23,5 +23,6 @@ fun main() {
 fun Application.module(firestore: Firestore) {
     routing {
         blogRoutes(firestore)
+        deletePostRoute(firestore) // Nova rota para deletar
     }
 }
